@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="libs\**" />
+    <EmbeddedResource Remove="libs\**" />
+    <None Remove="libs\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Stepon.FaceRecognizationCore" Version="1.0.0" />
+  </ItemGroup>
+
+</Project>
